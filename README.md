@@ -649,3 +649,5 @@
 <h3>Try it Out</h3>
 <p>Save all your changes, go to the browser, and type directly into the browser address bar <strong>http://localhost:4200/products</strong> and you will be directed to login page. Login as "psheriff" and you are redirected to the products list page.</p>
 
+
+<h2>Thanks To http://blog.fairwaytech.com/ <h2>
