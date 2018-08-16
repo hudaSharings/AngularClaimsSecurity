@@ -1,7 +1,8 @@
-<span id="hs_cos_wrapper_post_body" class="hs_cos_wrapper hs_cos_wrapper_meta_field hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="meta_field" data-hs-cos-type="rich_text"><p>I previously published a couple of articles on how to create a security system in Angular. In those articles, a set Angular classes for users' authentication/authorization were created. You used these classes to login a user and create a set of properties in a class to turn menus and buttons on and off. For each menu, or button, you want to turn on or off, you have a corresponding property in a AppUserAuth class. This works for smaller applications, but for larger applications, you would be best to use a traditional claims-based approach.</p>
+<span id="hs_cos_wrapper_post_body" class="hs_cos_wrapper hs_cos_wrapper_meta_field hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="meta_field" data-hs-cos-type="rich_text">
+  
 <!--more--><p>If you have used the Microsoft Identity system, you know it creates a set of "AspNet" tables. One of these tables is AspNetUserClaims into which you may assign a claim name and the value for the claim. You can think of claims like permissions. A claim may be something like 'I can add a Product', 'I can save a Product'. You can assign one or more claims to a user, or to a role.</p>
-<h2>Preparing for this Article</h2>
-<p>To demonstrate how to apply security to an Angular application, I created a sample application with a few pages to display products, display a single product, and display a list of product categories. You can download this sample from http://pdsa.com/downloads. Select "<strong>PDSA/Fairway Blog</strong>" from the Category drop-down, then choose "<strong>Using Claims to Secure Angular - Part 1</strong>". Within the zip file you download, there are two folders. One has a suffix of "-Start"; this is the sample without security. The other has a suffix of "-End" and is the final sample once you have completed all the steps in this article.</p>
+
+<p>To demonstrate how to apply security to an Angular application, I created a sample application with a few pages to display products, display a single product, and display a list of product categories</p>
 <p>This article assumes you have the following tools installed.</p>
 <ul>
 <li>Visual Studio Code</li>
@@ -647,5 +648,4 @@
   </pre>
 <h3>Try it Out</h3>
 <p>Save all your changes, go to the browser, and type directly into the browser address bar <strong>http://localhost:4200/products</strong> and you will be directed to login page. Login as "psheriff" and you are redirected to the products list page.</p>
-<h2>Summary</h2>
-<p>In this article you learned to setup an array of claims and perform authorization using those claims, as well as how to turn menus and buttons on and off can be done by using claim types. You also learned to secure routes using a Route Guard that looks up claim information in the array of claims for the currently logged-in user.</p></span>
+
