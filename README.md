@@ -3,7 +3,7 @@
 <!--more--><p>If you have used the Microsoft Identity system, you know it creates a set of "AspNet" tables. One of these tables is AspNetUserClaims into which you may assign a claim name and the value for the claim. You can think of claims like permissions. A claim may be something like 'I can add a Product', 'I can save a Product'. You can assign one or more claims to a user, or to a role.</p>
 
 <p>To demonstrate how to apply security to an Angular application, I created a sample application with a few pages to display products, display a single product, and display a list of product categories</p>
-<p>This article assumes you have the following tools installed.</p>
+<p>Make sure  you  have installed these following tools .</p>
 <ul>
 <li>Visual Studio Code</li>
 <li>Node</li>
