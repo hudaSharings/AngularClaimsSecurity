@@ -1,23 +1,11 @@
-http://blog.fairwaytech.com/using-claims-to-secure-angular-part-1
-
+#AngularClaimsSecurity
 
 A Look at the Sample Application
-In the sample you downloaded, there are two menus, Products and Categories (Figure 1), that you may wish to turn off based on claims assigned to a user. On the product and category list pages (Figure 1), you may want to turn off the Add button based on claims.
+In the sample you downloaded, there are two menus, Products and Categories (Figure 1), that you may wish to turn off based on claims assigned to a user. On the product and category list pages  you may want to turn off the Add button based on claims.
 
-SecClaims-Figure1.png
-
-Figure 1: Product list page
-
-On the product detail page (Figure 2), the Save button may be something you wish to turn off. Perhaps someone can view product detail, but not modify the data.
-
-SecClaims-Figure2.png
-
-Figure 2: Turn off the Save button based on claims
+On the product detail page , the Save button may be something you wish to turn off. Perhaps someone can view product detail, but not modify the data.
 
 Finally, on the Categories page (Figure 3), you may wish to make the Add New Category button invisible if someone does not have the appropriate claims.
-
-SecClaims-Figure3.png
-Figure 3: Turn off the Add New Category button based on permissions
 
 Create User Security Classes
 To secure an application, you need a couple of classes to hold user information. First, you need a user class to hold the user name and password that can be entered on a login page and verified against some data source. In the first part of this article, a mock set of logins is used for verification. Secondly, a user authentication/authorization class is used with properties for each item in your application you wish to secure.
@@ -726,3 +714,5 @@ Locate the login() method and add code after setting the securityObject to test 
   
 Try it Out
 Save all your changes, go to the browser, and type directly into the browser address bar http://localhost:4200/products and you will be directed to login page. Login as "psheriff" and you are redirected to the products list page.
+
+# Thanks To  http://blog.fairwaytech.com
